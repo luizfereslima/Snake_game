@@ -1,20 +1,40 @@
-let canvas = document.getElementById("snake");
+let canvas = document.getElementById("cobra");
 let context = canvas.getContext("2d");
-let box = 32;
-let snake = [];
-snake[0] = {x: 8 * box, y: 8 * box}
+let fundo = 32;
+let cobra = [];
+cobra[0] = {x: 8 * fundo, y: 8 * fundo}
+let direction = "right";
+
 
 function criarBG(){
     context.fillStyle = "lightgreen";
-    context.fillRect(0, 0, 16 * box, 16 * box);
+    context.fillRect(0, 0, 16 * fundo, 16 * fundo);
 }
 
 function criarCobrinha(){
-    for (i=0; i < snake.length; i++){
+    for (i=0; i < cobra.length; i++){
         context.fillStyle ="green";
-        context.fillRect(snake[i].x, snake[i].y, box, box);
+        context.fillRect(cobra[i].x, cobra[i].y, fundo, fundo);
     }
 }
 
-criarBG();
-criarCobrinha();
+function iniciarJogo(){
+    criarBG();
+    criarCobrinha();
+
+    let cobraX = cobra[0].x;
+    let cobraY = cobra[0].y;
+
+    if(direction == "right") cobraX += fundo;
+    if(direction == "left") cobraX -= fundo;
+    if(direction == "up") cobraY -= fundo;
+    if(direction == "down") cobraY += fundo;
+
+    cobra.pop();
+
+    let novaCabeca = {x: cobraX, y: cobraY}
+
+    cobra.unshift(novaCabeca);
+}
+
+let jogo = setInterval(iniciarJogo, 100);
