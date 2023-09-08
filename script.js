@@ -7,7 +7,7 @@ let direction = "right";
 
 
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "white";
     context.fillRect(0, 0, 16 * fundo, 16 * fundo);
 }
 
