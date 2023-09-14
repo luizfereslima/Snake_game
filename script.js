@@ -39,6 +39,13 @@ function iniciarJogo(){
     if(cobra[0].y > 15 * fundo && direction == "down") cobra[0].y = 0;
     if(cobra[0].y < 0 && direction == "up") cobra[0].y = 16 * fundo;
 
+    for(i = 1; i < cobra.length; i++){
+        if(cobra[0].x == cobra[i].x && cobra[0].y == cobra[i].y){
+            clearInterval(jogo);
+            alert('Game Over');
+        }
+    }
+
     criarBG();
     criarCobrinha();
     colocarComida();
@@ -51,11 +58,16 @@ function iniciarJogo(){
     if(direction == "up") cobraY -= fundo;
     if(direction == "down") cobraY += fundo;
 
-    cobra.pop();
+    if(cobraX != comida.x || cobraY != comida.y){
+        cobra.pop();
+    }else{
+        comida.x = Math.floor(Math.random() * 15 + 1)  * fundo; 
+        comida.y = Math.floor(Math.random() * 15 + 1) * fundo;
+    }
 
     let novaCabeca = {x: cobraX, y: cobraY}
 
     cobra.unshift(novaCabeca);
 }
 
-let jogo = setInterval(iniciarJogo, 80);
+let jogo = setInterval(iniciarJogo, 70);
