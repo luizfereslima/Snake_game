@@ -1,4 +1,4 @@
-# jogo_da_cobrinha
+# Snake game
 
 # foi utlizado o conhecimento em plano cartesiano;
 
