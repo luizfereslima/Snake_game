@@ -1,4 +1,4 @@
 # Snake game
 
-# foi utlizado o conhecimento em plano cartesiano;
+# foi utilizado o conhecimento em plano cartesiano;
 
