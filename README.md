@@ -12,16 +12,13 @@ Este projeto consiste na implementação do clássico jogo da Cobra (ou "Snake")
 
 - **script.js**: Este arquivo contém todo o código JavaScript necessário para a lógica do jogo. Ele inclui a definição de variáveis, funções para desenhar elementos no canvas, controle de eventos do teclado e lógica do jogo.
 
-### Funcionalidades:
+## Como Jogar:
 
-1. **Movimento da Cobra**:
-   - O jogador pode controlar a direção da cobra usando as teclas de seta do teclado (cima, baixo, esquerda e direita).
-2. **Crescimento da Cobra**:
-   - Quando a cobra come uma peça de comida, seu comprimento aumenta.
-3. **Geração de Comida**:
-   - A comida é gerada aleatoriamente dentro da área de jogo.
-4. **Colisão**:
-   - O jogo termina se a cabeça da cobra colidir com seu próprio corpo.
+1. - Abra o arquivo `index.html` em um navegador da web compatível com HTML5.
+2. - A cobra será exibida na tela junto com uma peça de comida.
+3. - Pressione a seta para cima para mover a cobra para cima, a seta para baixo para mover para baixo, a seta para a esquerda para mover para a esquerda e a seta para a direita para mover para a direita.
+4. - O objetivo do jogo é fazer com que a cobra cresça o máximo possível, comendo comida sem colidir com seu próprio corpo.
+6. - O jogo termina se a cabeça da cobra colidir com seu próprio corpo.
 
 ## Estrutura do Código:
 
