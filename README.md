@@ -1,9 +1,9 @@
 # Documentação do Projeto: Jogo da Cobra
 
-## Descrição:
+## Descrição
 Este projeto consiste na implementação do clássico jogo da Cobra (ou "Snake") usando HTML, CSS e JavaScript. O objetivo é criar uma versão interativa do jogo em que o jogador controla uma cobra que cresce ao comer comida, evitando colidir com seu próprio corpo ou as bordas da área de jogo.
 
-## Estrutura do Projeto:
+## Estrutura do Projeto
 
 ### Arquivos:
 - **index.html**: Este arquivo contém a estrutura básica do documento HTML. Ele define a estrutura da página web, incluindo o título do jogo, o canvas onde o jogo será renderizado e os links para os arquivos CSS e JavaScript.
@@ -20,7 +20,7 @@ Este projeto consiste na implementação do clássico jogo da Cobra (ou "Snake")
 4. O objetivo do jogo é fazer com que a cobra cresça o máximo possível, comendo comida sem colidir com seu próprio corpo.
 6. O jogo termina se a cabeça da cobra colidir com seu próprio corpo.
 
-## Estrutura do Código:
+## Estrutura do Código
 
 ### Variáveis Globais:
    - `tela`: Elemento canvas onde o jogo é desenhado.
@@ -45,8 +45,8 @@ Este projeto consiste na implementação do clássico jogo da Cobra (ou "Snake")
    - O jogo é implementado usando HTML para a estrutura da página, CSS para estilização e JavaScript para a lógica do jogo.
    - O código JavaScript é responsável por controlar o estado do jogo, detectar colisões, atualizar a posição da cobra e da comida e lidar com eventos de teclado.
 
-## Créditos:
+## Créditos
 Este projeto foi desenvolvido como parte de um exercício prático de programação.
 
-## Considerações Finais:
+## Considerações Finais
 O projeto do Jogo da Cobra fornece uma implementação básica e funcional do jogo clássico usando tecnologias web padrão. Ele pode ser expandido e personalizado de várias maneiras para criar uma experiência de jogo mais envolvente e desafiadora.
