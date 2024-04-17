@@ -45,9 +45,8 @@ Este projeto consiste na implementação do clássico jogo da Cobra (ou "Snake")
    - Chama a função `iniciarJogo()` em intervalos regulares para atualizar o estado do jogo.
 
 ## Implementação:
-O jogo é implementado usando HTML para a estrutura da página, CSS para estilização e JavaScript para a lógica do jogo.
-
-O código JavaScript é responsável por controlar o estado do jogo, detectar colisões, atualizar a posição da cobra e da comida e lidar com eventos de teclado.
+   - O jogo é implementado usando HTML para a estrutura da página, CSS para estilização e JavaScript para a lógica do jogo.
+   - O código JavaScript é responsável por controlar o estado do jogo, detectar colisões, atualizar a posição da cobra e da comida e lidar com eventos de teclado.
 
 ## Considerações Finais:
 O projeto do Jogo da Cobra fornece uma implementação básica e funcional do jogo clássico usando tecnologias web padrão. Ele pode ser expandido e personalizado de várias maneiras para criar uma experiência de jogo mais envolvente e desafiadora.
